@@ -1,0 +1,16 @@
+<Project>
+
+    <PropertyGroup>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>true</ImplicitUsings>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <EnableWindowsTargeting>true</EnableWindowsTargeting>
+        <NoWarn>$(NoWarn);NU1507</NoWarn>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PolyArgumentExceptions>true</PolyArgumentExceptions>
+    </PropertyGroup>
+
+</Project>

@@ -1,0 +1,48 @@
+name: 🐛 Bug report
+description: Report errors or unexpected behavior
+labels:
+  - bug 🐛
+  - needs triage 🔍
+body:
+  - type: markdown
+    attributes:
+      value: Please make sure to [search for existing issues](https://github.com/Nice3point/RevitLogging/issues?q=) before filing a new one!
+
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: Include the registration code and the journal record it produced
+      placeholder: |
+        1. Call AddRevitJournal in OnStartup
+        2. Write a record through ILogger
+        3. Read the journal of the session
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: ✔️ Expected Behavior
+      placeholder: What were you expecting?
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: ❌ Actual Behavior
+      placeholder: What happened instead?
+    validations:
+      required: false
+
+  - type: input
+    attributes:
+      label: Revit version
+      placeholder: 2027.1.0
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Package version
+      placeholder: 2027.0.0
+    validations:
+      required: true

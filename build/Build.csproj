@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <UserSecretsId>4f0a2d15-8c6e-4b7a-9d31-6e5c0b8a7f24</UserSecretsId>
+        <!-- ModularPipelines carries its own Microsoft.Extensions graph, ahead of the version the package pins -->
+        <CentralPackageTransitivePinningEnabled>false</CentralPackageTransitivePinningEnabled>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Sourcy.DotNet"/>
+        <PackageReference Include="Shouldly"/>
+        <PackageReference Include="ModularPipelines"/>
+        <PackageReference Include="ModularPipelines.Git"/>
+        <PackageReference Include="ModularPipelines.GitHub"/>
+        <PackageReference Include="ModularPipelines.DotNet"/>
+        <PackageReference Include="Microsoft.VisualStudio.SolutionPersistence"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="appsettings.json" CopyToOutputDirectory="PreserveNewest"/>
+    </ItemGroup>
+
+</Project>
