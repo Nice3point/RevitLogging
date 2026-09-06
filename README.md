@@ -1,7 +1,7 @@
 <p align="center">
     <picture>
-        <source media="(prefers-color-scheme: dark)" width="750" srcset="https://github.com/user-attachments/assets/60bd7eb3-e93f-4002-be2c-bc07d1f1e7a5">
-        <img alt="Nice3point.Revit.Logging" width="750" src="https://github.com/user-attachments/assets/03f62c58-4ca8-4dbb-b030-9aad6db28041">
+        <source media="(prefers-color-scheme: dark)" width="750" srcset="https://github.com/user-attachments/assets/66176eea-222b-4016-82e8-35f373cfa1c4">
+        <img alt="Nice3point.Revit.Logging" width="750" src="https://github.com/user-attachments/assets/1261e265-a862-46a4-9f13-008db33d49ed">
     </picture>
 </p>
 
