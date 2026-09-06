@@ -1,4 +1,19 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "baseBranchPatterns": ["develop"]
+  "baseBranchPatterns": ["develop"],
+  "packageRules": [
+    {
+      "description": [
+        "The Microsoft.Extensions versions are the lowest the provider compiles against, not the versions it is expected to run on.",
+        "NuGet resolves the highest version of the consumer graph, so an add-in on a newer release band keeps that band.",
+        "Raising the floor forces every add-in onto the new band, and an add-in that pins an older one fails to restore with NU1605.",
+        "The test project stays on the same versions and exercises the floor the package declares."
+      ],
+      "matchPackageNames": [
+        "Microsoft.Extensions.Logging.Configuration",
+        "Microsoft.Extensions.DependencyInjection"
+      ],
+      "enabled": false
+    }
+  ]
 }

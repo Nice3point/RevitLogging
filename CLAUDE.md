@@ -10,8 +10,8 @@ It adds the journal as a logging provider. Log levels, filtering, scopes and mes
 * The Revit API stays in `Writers/`. The formatter, the logger and the options reference no Revit type.
 * The public surface and the registration follow the Microsoft logging providers.
 * Never break the public surface. Deprecate a renamed member with `[Obsolete]`, name the replacement, and keep the member functional.
-* Every type compiles under every supported configuration, `Release.R20` through `Release.R27`. `System.Threading.Lock`, `ReplaceLineEndings` and async disposal of a `FileStream` are unavailable on the .NET Framework configurations without Polyfill.
-* `Nice3point.TUnit.Revit` starts at Revit 2021. The solution maps the test project onto `R21` under the `R20` configurations and drops it from that build.
+* Every type compiles under every supported configuration.
+* The `Microsoft.Extensions` versions are a floor, held at the oldest supported LTS and excluded from Renovate in `renovate.json`. Raise one only for an API the provider needs.
 * Confirm an unfamiliar Revit or .NET API before use through official docs or `gh` (`gh api`, `gh search code`).
 * A public-surface change updates `README.md`, `CHANGELOG.md` and the XML docs in the same commit.
 
