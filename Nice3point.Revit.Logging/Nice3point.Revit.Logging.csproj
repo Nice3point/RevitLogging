@@ -11,8 +11,8 @@
         <PackageType>Dependency</PackageType>
         <PackageId>Nice3point.Revit.Logging</PackageId>
         <Authors>Nice3point</Authors>
-        <Description>Microsoft.Extensions.Logging provider that writes to the Revit journal</Description>
-        <PackageTags>autodesk;revit;logging;journal</PackageTags>
+        <Description>Microsoft.Extensions.Logging provider for the Revit journal</Description>
+        <PackageTags>autodesk;revit;api;logging;journal</PackageTags>
         <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/Nice3point/RevitLogging</RepositoryUrl>
         <PackageProjectUrl>https://github.com/Nice3point/RevitLogging</PackageProjectUrl>
@@ -30,6 +30,11 @@
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
         <CentralPackageTransitivePinningEnabled>false</CentralPackageTransitivePinningEnabled>
         <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <!-- Use the low Microsoft.Extensions floor into the package dependency group -->
+        <CentralPackageTransitivePinningEnabled>false</CentralPackageTransitivePinningEnabled>
     </PropertyGroup>
 
     <ItemGroup>

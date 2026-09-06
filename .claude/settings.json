@@ -18,7 +18,7 @@
   },
   "enabledPlugins": {
     "dotnet@revit-skills": true,
-    "revit-benchmarking@revit-skills": true,
+    "revit-testing@revit-skills": true,
     "dotnet-msbuild@dotnet-agent-skills": true
   }
 }
