@@ -28,6 +28,7 @@
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <CentralPackageTransitivePinningEnabled>false</CentralPackageTransitivePinningEnabled>
         <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
     </PropertyGroup>
 
@@ -41,11 +42,6 @@
         <PackageReference Include="Nice3point.Revit.Api.RevitAPI" PrivateAssets="all"/>
         <PackageReference Include="Microsoft.Extensions.Logging.Configuration"/>
     </ItemGroup>
-
-    <!-- Polyfills configuration -->
-    <PropertyGroup>
-        <PolyUseEmbeddedAttribute>true</PolyUseEmbeddedAttribute>
-    </PropertyGroup>
 
     <ItemGroup>
         <InternalsVisibleTo Include="Nice3point.Revit.Logging.Tests"/>

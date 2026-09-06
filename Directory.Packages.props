@@ -24,7 +24,6 @@
     <ItemGroup>
         <!-- Logging -->
         <PackageVersion Include="Microsoft.Extensions.Logging.Configuration" Version="8.0.0"/>
-        <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0"/>
 
         <!-- Build Automation -->
         <PackageVersion Include="Sourcy.DotNet" Version="1.1.1"/>
@@ -34,6 +33,7 @@
         <PackageVersion Include="ModularPipelines.DotNet" Version="3.2.8"/>
 
         <!-- Testing -->
+        <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="10.0.11"/>
         <PackageVersion Include="TUnit" Version="1.65.68"/>
         <PackageVersion Include="Shouldly" Version="4.3.0"/>
 
