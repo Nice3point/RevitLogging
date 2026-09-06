@@ -43,11 +43,11 @@
     <BuildType Solution="Release.R27|*" Project="Release"/>
     <Build Project="false"/>
   </Project>
-  <Project Path="Nice3point.Revit.Logging.Tests/Nice3point.Revit.Logging.Tests.csproj">
+  <Project Path="tests/Nice3point.Revit.Logging.Tests/Nice3point.Revit.Logging.Tests.csproj">
     <BuildType Solution="Debug.R20|*" Project="Debug.R21"/>
     <BuildType Solution="Release.R20|*" Project="Release.R21"/>
     <Build Solution="Debug.R20|*" Project="false"/>
     <Build Solution="Release.R20|*" Project="false"/>
   </Project>
-  <Project Path="Nice3point.Revit.Logging/Nice3point.Revit.Logging.csproj"/>
+  <Project Path="source/Nice3point.Revit.Logging/Nice3point.Revit.Logging.csproj"/>
 </Solution>

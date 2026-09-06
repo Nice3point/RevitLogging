@@ -27,12 +27,12 @@ The package rests on what Revit does to the text of a comment. Each of the follo
 
 ## Repository map
 
-* `Nice3point.Revit.Logging/` — the provider, packed as a NuGet package. `RevitLoggingRegistration` is the entry point users call.
-* `Nice3point.Revit.Logging.Tests/` — TUnit tests. Every test runs inside a Revit session opened by the injector, on the Revit thread the assembly-level executor of `TestsConfiguration.cs` marshals it onto. `RevitJournalTests` asserts against the file Revit is recording.
+* `source/Nice3point.Revit.Logging/` — the provider, packed as a NuGet package. `RevitLoggingRegistration` is the entry point users call.
+* `tests/Nice3point.Revit.Logging.Tests/` — TUnit tests. Every test runs inside a Revit session opened by the injector, on the Revit thread the assembly-level executor of `TestsConfiguration.cs` marshals it onto. `RevitJournalTests` asserts against the file Revit is recording.
 * `build/` — the ModularPipelines build for packing and publishing.
 * Root — `Directory.Build.props`, `Directory.Packages.props`, `global.json`, `README.md`, `CHANGELOG.md`, CI workflows.
 
 ## Build and verify
 
 * Build: `dotnet build -c Release.R##`, where the `R##` suffix is the Revit year (`R27` targets Revit 2027).
-* Test: `dotnet run --project Nice3point.Revit.Logging.Tests -c Release.R##`; requires a matching licensed Revit installation.
+* Test: `dotnet run --project tests/Nice3point.Revit.Logging.Tests -c Release.R##`; requires a matching licensed Revit installation.
